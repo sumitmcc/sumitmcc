@@ -1,0 +1,15 @@
+.section {
+  border-bottom: 1px solid;
+}
+
+.like {
+  color: var(--mantine-color-red-6);
+  width: 20px;
+  height: 20px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: var(--mantine-font-size-xs);
+  font-weight: 700;
+}

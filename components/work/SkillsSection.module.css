@@ -1,0 +1,53 @@
+.skillIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.skillIcon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: brightness(1);
+  transition: filter 0.2s ease;
+}
+
+.skillIcon:hover img {
+  filter: brightness(1.1);
+}
+
+/* Fallback icon styling */
+.skillIcon > div {
+  transition: all 0.2s ease;
+}
+
+.skillIcon:hover > div {
+  transform: scale(1.05);
+}
+
+/* Dark mode adjustments */
+.dark .skillIcon img {
+  filter: brightness(0.9);
+}
+
+.dark .skillIcon:hover img {
+  filter: brightness(1);
+}
+
+.skillCard {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark .skillCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

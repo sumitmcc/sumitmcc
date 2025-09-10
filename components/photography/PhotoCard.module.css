@@ -1,0 +1,45 @@
+/* PhotoCard.module.css */
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card:hover {
+    transform: translateY(-2px);
+  }
+}

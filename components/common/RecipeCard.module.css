@@ -1,0 +1,49 @@
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dark .card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dark .section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Recipe content styling */
+.recipeContent {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
