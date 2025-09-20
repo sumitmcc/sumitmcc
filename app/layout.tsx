@@ -5,6 +5,7 @@ import Provider from '@/components/ui/Provider';
 import Navbar from "@/components/layout/Navbar"; 
 import Head from "next/head";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 import '@mantine/core/styles.css';
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
@@ -46,7 +47,9 @@ export default function RootLayout({
           <MantineProvider>
           <main className="container mx-auto ">
             {children}
+            {/* Vercel Analytics - Do not remove */}
             <SpeedInsights />
+            <Analytics />
           </main>
           </MantineProvider>
           
