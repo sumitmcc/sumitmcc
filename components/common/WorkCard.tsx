@@ -2,6 +2,7 @@
 'use client';
 
 import { Badge, Card, Group, Image, Text, Spoiler } from '@mantine/core';
+import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 import { BaseItem } from '@/lib/types';
 import { formatDuration } from '@/lib/utils';
 import { SkillIcon } from './SkillIcon';
@@ -77,14 +78,24 @@ export function WorkCard(props: WorkCardProps) {
         )}
 
         {description && (
-          <Spoiler 
-            maxHeight={120} 
-            showLabel="Show more" 
-            hideLabel="Hide" 
-            className='text-gray-800 dark:text-gray-200 mt-3' 
-            fw={100}
+          <Spoiler
+            maxHeight={130}
+            showLabel={
+              <span className={classes.spoilerButton}>
+                Show more <IconChevronDown size={14} stroke={1.8} />
+              </span>
+            }
+            hideLabel={
+              <span className={classes.spoilerButton}>
+                Show less <IconChevronUp size={14} stroke={1.8} />
+              </span>
+            }
+            className="mt-3"
+            transitionDuration={180}
           >
-            {description}
+            <Text fz="sm" className='text-gray-800 dark:text-gray-200 leading-relaxed'>
+              {description}
+            </Text>
           </Spoiler>
         )}
       </Card.Section>

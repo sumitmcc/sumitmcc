@@ -13,3 +13,49 @@
   font-size: var(--mantine-font-size-xs);
   font-weight: 700;
 }
+
+.spoilerButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--mantine-color-orange-6);
+  background: rgba(var(--mantine-color-orange-6-rgb), 0.06);
+  border: 1px solid rgba(var(--mantine-color-orange-6-rgb), 0.25);
+  padding: 4px 1px;
+  border-radius: 6px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, border-color .18s ease;
+}
+
+.dark .spoilerButton,
+[data-mantine-color-scheme='dark'] .spoilerButton {
+  color: var(--mantine-color-blue-3);
+  background: rgba(var(--mantine-color-blue-8-rgb), 0.35);
+  border-color: rgba(var(--mantine-color-blue-4-rgb), 0.35);
+}
+
+.spoilerButton:hover {
+  background: rgba(var(--mantine-color-blue-6-rgb), 0.12);
+}
+
+.dark .spoilerButton:hover,
+[data-mantine-color-scheme='dark'] .spoilerButton:hover {
+  background: rgba(var(--mantine-color-blue-7-rgb), 0.5);
+}
+
+.spoilerButton:focus-visible {
+  outline: 2px solid var(--mantine-color-blue-5);
+  outline-offset: 2px;
+}
+
+.spoilerButton:active {
+  transform: translateY(1px);
+}
+
+/* Reduce visual weight on very long cards */
+.spoilerButton {
+  box-shadow: 0 0 0 0 transparent;
+}

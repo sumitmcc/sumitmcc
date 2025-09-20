@@ -6,6 +6,7 @@ import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { SlBriefcase, SlGraduation } from 'react-icons/sl';
 import { VscTools } from 'react-icons/vsc';
 import { ContentCategory } from '@/lib/types';
+import { GiCelebrationFire } from 'react-icons/gi';
 
 interface WorkNavProps {
   activeCategory: ContentCategory;
@@ -18,6 +19,7 @@ export function WorkNav({ activeCategory, setActiveCategory }: WorkNavProps) {
     { id: "education" as ContentCategory, label: "Education", icon: <SlGraduation size={30} /> },
     { id: "projects" as ContentCategory, label: "Projects", icon: <AiOutlineFundProjectionScreen size={30} /> },
     { id: "skills" as ContentCategory, label: "Skills", icon: <VscTools size={30} /> },
+    { id: "extracurriculars" as ContentCategory, label: "Extracurriculars", icon: <GiCelebrationFire size={30} /> },
   ];
 
   return (
