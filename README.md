@@ -8,7 +8,7 @@ These days, life is a bit busier (and a lot messier) as I spend most of my time 
 
 Welcome to my little corner of the internet!
 
-Oh btw, you can see my portfolio here: [www.sumitmcc.com](www.sumitmcc.com)
+Oh btw, you can see my portfolio here: [www.sumitmcc.com](https://sumitmcc.com)
 
 
 Fun fact: I’ve experienced some of nature’s most dramatic moods – from earthquakes and hurricanes to blizzards, snowstorms, and hailstorms.
